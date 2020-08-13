@@ -1,0 +1,49 @@
+body,
+html {
+  width: 100%; /*#good practice to make sure body and html cover 100% of screen*/
+  height: 100%; /*#good practice to make sure body and html cover 100% of screen*/
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; /*#dont repeat image, center image, keep image fixed. this line fills whole page with our image*/ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+hr {
+	border-color: #F05F44; /*#color up our little hr line*/
+	border-width: 3px;
+	max-width: 65px; /*#the line takes up whole page lets make it smaller*/
+}
+
+.buffer {
+	height: 10rem; /*#make an empty space between the Text and the HR line*/
+}
+
+h1 {
+	font-size: 3rem;
+	color: #e2dbdb;
+}
+
+.btn {
+	font-weight: 700;
+	border-radius: 300px; /*#makes the edges more circular instead of square*/
+	text-transform: uppercase; /*#capitalize everything on the button*/
+}
+
+.btn-xl {
+	padding: 1rem 2 rem; /*# padding of 1rem on sides, 2rem on top and bottom. So this will make button bigger*/
+
+}
+
+.btn-primary {
+	background-color: #F05F44; /*#make button orange color*/
+	border-color: #F05F44; /*#button has blue on edges which is default for bootstrap theme. change it to same color as button*/
+}
+
+.btn-primary:hover {
+	background-color: #ee4b08; /*#when hovering over button its still blue, lets make it a dark orange instead*/
+	border-color: #ee4b08; /*#do to do same as above for border color, bc its still blue, make it the dark orange*/
+	border-width: 4px; /*#increase border width to make it bigger when we hover over it*/
+}

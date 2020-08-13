@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container d-flex align-items-center h-100"> <!-- #lets make our BOOTSTRAP GRID system. Activate D-FLEX class (align-items-center) to use Flexbox container which we need to move things vertically. h-100: tell the container to span the entire Height of the page, so we can center stuff. Now when we inspect we will see container will be full length of page and stuff will be centered! -->
+<!--#Want h1,hr, and button to be in one row ->wrap these 3 in a div
+ -->
+      <div class="row">
+        <!-- #divide each thing(h1,hr,button) into different sections  -->
+        <header class="text-center col-12"> <!-- #text-center (bootstrap funct?) centers the text. Make col-12 so its centered -->
+          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1> <!-- #class="text-uppercase" to make text all caps -->
+        </header>
+        <!--#create another section just to add some space between the Text and the hr_line + button-->
+        <div class="buffer col-12">
+        </div>  
+
+        <!-- #add small little line (hr-horizontal line) above button just to add some flavor  -->
+        <section class="text-center col-12"> <!-- #center this as well. Make col-12 so its centered -->
+          <hr>
+          <a href="https://mailchi.mp/a0022f0b51b2/ztmstudents">
+            <button class="btn btn-primary btn-xl">Find out more</button> <!-- #check docs of Bootrap of all teh Button Class we can use. We can add our own custom CSS at the END so we can change the Color! BTN-XL is not a Bootstrap class, we added it. So we can go to style.css and add our customizations to it
+     -->
+          </a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
